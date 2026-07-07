@@ -1,0 +1,1 @@
+const API='https://garaje-api.gerardogallegohernandez.workers.dev/open';const API_KEY='CAMBIAR_API_KEY';btn.onclick=async()=>{msg.textContent='Enviando...';try{const r=await fetch(API,{method:'POST',headers:{Authorization:'Bearer '+API_KEY}});msg.textContent=r.ok?'Comando enviado':'Error';}catch(e){msg.textContent='Sin conexión';}};
